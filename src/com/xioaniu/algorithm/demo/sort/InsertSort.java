@@ -4,6 +4,7 @@ import java.util.Arrays;
 
 /**
  * 插入排序 :插入排序的时间复杂度为：O(n2) 。
+ * 插入排序的思想： 从没有排序的数据中拿出第一个与前面排好序的数据比较
  * @author zhaohe
  */
 public class InsertSort {

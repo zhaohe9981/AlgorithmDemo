@@ -56,8 +56,44 @@ public class QuickSort {
 		int[] source = {3,7,1,5,4,6,0};
 		System.out.println("排序前：" + Arrays.toString(source));
 		
-		sort(source,0,source.length - 1);
+		sort2(source,0,source.length - 1);
 		System.out.println(TAG + "排序后：" + Arrays.toString(source));
+	}
+	
+	
+	
+	public static void sort2(int[] arr, int left, int right) {
+		
+		 if(left>right){
+	            return;
+	        }
+		
+		int l = left, r = right, flag, temp;
+		flag = arr[left];
+		
+		while(l < r) {
+			//右边的小兵先走
+			while(arr[r] >= flag && l < r) {
+				r--;
+			}
+			
+			while(arr[l] <= flag && l < r) {
+				l++;
+			}
+			
+			if(l < r) {
+				temp = arr[l];
+				arr[l] = arr[r];
+				arr[r] = temp;
+			}
+		}
+		
+		arr[left] = arr[l];
+		arr[l] = flag;
+		
+		sort2(arr, left, r -1);
+		sort2(arr, r+1, right);
+	
 	}
 	
 }

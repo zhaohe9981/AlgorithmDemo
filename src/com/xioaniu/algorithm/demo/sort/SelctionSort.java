@@ -5,7 +5,7 @@ import java.util.Arrays;
 /**
  * 选择排序 :选择排序时间复杂度为：O(n2) 。
  * @author zhaohe
- * 
+ * 选择排序的思想是：从未排序的数据中拿出最小数插入到排序之后的数据的最后一条
  * https://www.cnblogs.com/shen-hua/p/5424059.html
  */
 public class SelctionSort {
@@ -50,5 +50,6 @@ public class SelctionSort {
 		int[] sorted = sort(source);
 		System.out.println(TAG + "排序后：" + Arrays.toString(sorted));
 	}
+	
 	
 }
