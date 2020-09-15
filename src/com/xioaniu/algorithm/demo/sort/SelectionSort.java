@@ -8,9 +8,9 @@ import java.util.Arrays;
  * 选择排序的思想是：从未排序的数据中拿出最小数插入到排序之后的数据的最后一条
  * https://www.cnblogs.com/shen-hua/p/5424059.html
  */
-public class SelctionSort {
+public class SelectionSort {
 	
-	private final static String TAG = SelctionSort.class.getSimpleName();
+	private final static String TAG = SelectionSort.class.getSimpleName();
 	
 	
 	/**
